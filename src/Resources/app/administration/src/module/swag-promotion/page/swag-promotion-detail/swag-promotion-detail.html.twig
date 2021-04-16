@@ -1,0 +1,35 @@
+{% block swag_promotion_detail %}
+<sw-page class="swag-promotion-detail">
+    <template slot="smart-bar-actions">
+        <sw-button :routerLink="{ name: 'swag.promotion.list' }">
+            {{ $t('swag-promotion.detail.cancelButtonText') }}
+        </sw-button>
+
+        <sw-button-process
+            :isLoading="isLoading"
+            :processSuccess="processSuccess"
+            variant="primary"
+            @process-finish="saveFinish"
+            @click="onClickSave">
+            {{ $t('swag-promotion.detail.saveButtonText') }}
+        </sw-button-process>
+    </template>
+
+    <template slot="content">
+        <sw-card-view>
+            <sw-card v-if="promotion" :isLoading="isLoading">
+                <sw-field :label="$t('swag-promotion.detail.nameLabel')" v-model="promotion.name" type="string"></sw-field>
+                <sw-field :label="$t('swag-promotion.detail.discountLabel')" v-model="promotion.discountRate" type="number"></sw-field>
+                <sw-field :label="$t('swag-promotion.detail.startDateLabel')" v-model="promotion.startDate" type="date"></sw-field>
+                <sw-field :label="$t('swag-promotion.detail.expiredDateLabel')" v-model="promotion.expiredDate" type="date"></sw-field>
+
+                <sw-entity-single-select
+                    :label="$t('swag-promotion.detail.assignProductsLabel')"
+                    v-model="promotion.productId"
+                    entity="product">
+                </sw-entity-single-select>
+            </sw-card>
+        </sw-card-view>
+    </template>
+</sw-page>
+{% endblock %}
