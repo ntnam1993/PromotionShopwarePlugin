@@ -1,0 +1,28 @@
+{
+    "name": "swag/plugin-skeleton",
+    "description": "Skeleton plugin",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nam Nguyen NFQ"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SwagPromotion\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "SwagPromotion\\SwagPromotion",
+        "label": {
+            "de-DE": "Swag Promotion plugin",
+            "en-GB": "Swag Promotion plugin"
+        }
+    }
+}

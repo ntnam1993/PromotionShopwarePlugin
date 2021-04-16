@@ -1,0 +1,42 @@
+{
+    "swag-promotion": {
+        "general": {
+            "mainMenuItemGeneral": "Promotion",
+            "descriptionTextModule": "Verwalte die Bundles hier"
+        },
+        "list": {
+            "addButtonText": "Add Promotion",
+            "columnName": "Name",
+            "columnDiscount": "Discount",
+            "columnStartDate": "Start Date",
+            "columnExpiredDate": "Expired Date"
+        },
+        "detail": {
+            "nameLabel": "Name",
+            "discountLabel": "Rabatt",
+            "discountTypeLabel": "Rabatt Typ",
+            "assignProductsLabel": "Produkte zuweisen",
+            "cancelButtonText": "Abbrechen",
+            "saveButtonText": "Speichern",
+            "errorTitle": "Fehler beim Speichern des Bundles",
+            "absoluteText": "Absolut",
+            "percentageText": "Prozentual"
+        }
+    },
+
+    "sw-product": {
+        "detail": {
+            "bundleCardLabel": "Bundles",
+            "bundleSelectLabel": "Zugewiesene Bundles",
+            "bundleSelectPlaceholder": "Bundle hinzufügen..."
+        }
+    },
+
+    "sw-condition": {
+        "condition": {
+            "cartContainsBundle": {
+                "label": "Warenkorb enthält Bundle"
+            }
+        }
+    }
+}
